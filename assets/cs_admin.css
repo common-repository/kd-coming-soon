@@ -1,0 +1,266 @@
+/*
+	KD Coming Soon
+
+	Copyright (c) 2015-2017 Kalli Dan. (email : kallidan@yahoo.com)
+
+	KD Coming Soon is free software: you can redistribute it but NOT modify it
+	under the terms of the GNU Lesser Public License as published by the Free Software Foundation,
+	either version 3 of the LGPL License, or any later version.
+
+	KD Coming Soon is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	See the GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License along with KD Coming Soon.
+	If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* setup */
+.wrap {
+	margin: 10px 20px 0 2px;
+}
+
+.wrap h2.cstitle {
+	font-family: 'Aller', Arial, Helvetica, Geneva, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #21759b;
+}
+.wrap h2.cstitle > img {
+  padding: 10px 20px 20px 0px;
+}
+
+h3 {
+	color: #222;
+	font-size: 1.3em;
+	margin: 1em 0;
+}
+h5 {
+	font-size: .83em;
+	margin: 1.67em 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.popover{width:700px !important; white-space: nowrap;}
+.ui-datepicker-calendar{border:1px solid #ccc;}
+/* tabs */
+.tab-content{
+	padding:10px;
+	width:900px;
+	min-height:250px;
+	border:1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.nav-tabs > li {
+   border:1px solid #ccc;
+	border-bottom:none;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left:5px;
+}
+.nav-tabs > li.active{
+	background-color:#d5d5d5;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+	background-color:#d5d5d5;
+	border-color:transparent;
+}
+
+/* frame layout */
+div.csadmin{
+	
+}
+
+/* tables */
+table.csadmin{
+	width:860px;
+}
+table.csadmin td{
+	padding: 3px;
+}
+table.csadminexp{
+	width:550px;
+}
+table.csadminexp th{
+	padding:5px;
+	border-bottom:1px solid #ccc;
+}
+table.csadminexp td{
+	padding: 3px;
+	height:32px;
+}
+/* forms */
+form.csadmin{
+
+}
+input{
+	height:30px;
+	height: 34px;
+	margin-top: 5px;
+	border: 1px solid #ccc !important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+input:focus{
+	box-shadow:none !important;
+	border:1px solid #ccc !important;
+}
+input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+   /*border: 0px solid #ccc !important; */
+	border:none !important;
+}
+
+/* buttons */
+.wp-core-ui .button-success {
+    background: #5cb85c none repeat scroll 0 0;
+    border-color: #4cae4c;
+    color: #fff;
+    text-decoration: none;
+	 border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 10px 1px;
+}
+.wp-core-ui .button-success:hover,
+.wp-core-ui .button-success:focus,
+.wp-core-ui .button-success:active,
+.wp-core-ui .button-success.active {
+	color: #fff !important;
+	background-color: #47a447 !important;
+	border-color: #398439 !important;
+}
+.wp-core-ui .button-danger {
+    background: #d9534f none repeat scroll 0 0;
+    border-color: #d43f3a;
+    color: #fff;
+    text-decoration: none;
+	 border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 10px 1px;
+}
+.wp-core-ui .button-danger:hover,
+.wp-core-ui .button-danger:focus,
+.wp-core-ui .button-danger:active {
+	color: #fff !important;
+	background-color: #d2322d !important;
+	border-color: #d43f3a !important;
+}
+.btn-info {
+  color: #fff !important;
+  background-color: #5bc0de !important;
+  border-color: #46b8da !important;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active {
+  color: #fff !important;
+  background-color: #39b3d7 !important;
+  border-color: #269abc !important;
+}
+.btn-warning {
+  color: #fff !important;
+  background-color: #f0ad4e !important;
+  border-color: #eea236 !important;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active {
+  color: #fff !important;
+  background-color: #ed9c28 !important;
+  border-color: #d58512 !important;
+}
+
+.cshelp-inline {
+	display:inline-block;
+	vertical-align: middle;
+	background: #f8f8f8 url(../img/help.png) top left;
+	position: relative;
+	width:14px;
+	height:14px;
+	cursor:pointer;
+}
+
+.calimg, #colorpickerHolder{ cursor:pointer; }
+
+/* slides */
+#kdcsslideopt{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#kdcsslideopt li {
+	margin-bottom: 5px;
+}
+
+/* preview */
+#cspreview{
+	display:none;
+	width:800px;
+	height:900px;
+}
+#csPreviewContent{
+	width: 100%;
+	height: 900px;
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+/* validation errors */
+.cserror {
+  display: none;
+  text-align: left;
+  margin: 0;
+  font-family: 'Aller', Arial, Helvetica, Geneva, sans-serif;
+  font-size: 11px;
+  color: #ff0e0e;
+  white-space: nowrap;
+}
+.cs-sw{
+	display: inline;
+	font-size: 14px;
+	color: #e75967;
+}
+
+/* slide delete button */
+.outer {
+	text-decoration:none;
+	height:auto;
+	z-Index: 9;
+}
+.box1 {
+	display: none;
+	position:absolute;
+	width: 16px;
+	height:16px;
+	z-Index: 10;
+}

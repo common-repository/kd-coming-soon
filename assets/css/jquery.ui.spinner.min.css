@@ -1,0 +1,18 @@
+﻿/*
+	FB Group Feed
+
+	Copyright (c) 2014-2015 Kalli Dan. (email : kallidan@yahoo.com)
+
+	FB Group Feed is free software: you can redistribute it but NOT modify it
+	under the terms of the GNU Lesser Public License as published by the Free Software Foundation,
+	either version 3 of the LGPL License, or any later version.
+
+	FB Group Feed is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+	See the GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License along with FB Group Feed.
+	If not, see <http://www.gnu.org/licenses/>.
+*/
+.ui-spinner{width:80px!important;display:block;position:relative;overflow:hidden;border:1px solid #dfdfdf;height:25px;padding:0;background:url(../img/spinnerBg.png) repeat-x top left!important}.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:1px!important}.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:1px!important}.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:1px!important}.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{border-top-left-radius:1px!important}.ui-state-default,.ui-widget-content .ui-state-default{border:none!important}.ui-spinner .ui-icon,.ui-button-text{display:none!important}.ui-spinner-disabled{background:#F4F4F4;color:#CCC}.ui-spinner input.ui-spinner-box{border:none!important;background:none!important;padding:6px 0}.ui-spinner-up,.ui-spinner-down{width:18px!important;padding:0;margin:0;z-index:100;position:absolute;right:0;cursor:pointer!important;border:0}.ui-spinner-up{background:url(../img/spinnerTop.png) no-repeat!important;height:13px;top:0}.ui-spinner-down{height:12px;bottom:0;background:url(../img/spinnerBottom.png) no-repeat!important}.ui-spinner-list,.ui-spinner-listitem{margin:0;padding:0;font-size:11px}.ui-spinner ul li,.ui-spinner-data{line-height:25px;height:25px}.ui-spinner input{border:none!important}.ui-spinner input:focus,.ui-spinner input.ui-spinner-box:focus{outline:0;border:none!important;border-color:#FCFCFC!important;background:none!important}

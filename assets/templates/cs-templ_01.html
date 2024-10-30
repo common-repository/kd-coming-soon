@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>%SITE_TITLE%</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+	<link rel="stylesheet" href="%PLUGIN_URL%/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="%PLUGIN_URL%/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="%PLUGIN_URL%/css/style.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="../../../favicon.ico">
+
+	<style type="text/css">
+	<!--
+	body { border-top: 2px solid %CS_COLOR%; }
+	a, a:hover, a:focus { color: %CS_COLOR%; }
+	::-moz-selection { background: %CS_COLOR%; }
+	::selection { background: %CS_COLOR%; }
+	.logo h1 span { color: %CS_COLOR%; }
+	.logo a:hover { color: %CS_COLOR%; }
+	.timer .days-wrapper:hover,
+	.timer .hours-wrapper:hover,
+	.timer .minutes-wrapper:hover,
+	.timer .seconds-wrapper:hover { background: %CS_COLOR% url(%PLUGIN_URL%/img/pattern-2.png); }
+	.subscribe form button { background: %CS_COLOR%; }
+	.social a:hover, .social a:focus { background: %CS_COLOR%;color:#fff; }
+	-->
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row header">
+			<div class="col-sm-4 logo">
+				<h1><a href="#">%CS_NAME%</a><span>.</span></h1>
+			</div>
+			<div class="col-sm-8 call-us">
+				%CS_SUBNAME%
+			</div>
+		</div>
+	</div>
+
+	<div class="coming-soon">
+		<div class="inner-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>%CS_TITLE%</h2>
+						<p>%CS_SUBTITLE%</p>
+						<div class="timer">
+							<div class="days-wrapper">
+								<span class="days"></span> <br>days
+							</div>
+							<div class="hours-wrapper">
+								<span class="hours"></span> <br>hours
+							</div>
+							<div class="minutes-wrapper">
+								<span class="minutes"></span> <br>minutes
+							</div>
+							<div class="seconds-wrapper">
+								<span class="seconds"></span> <br>seconds
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 subscribe">
+				<h3>%CS_FTITLE%</h3>
+				<p>%CS_FSUBTITLE%</p>        
+				<form id="regForm" class="form-inline" role="form" action="%ACTION_URL%" method="post">
+					<input type="hidden" id="cetitle" name="cetitle" value="%CS_aTITLE%">
+					<div class="form-group">
+						<label class="sr-only" for="subscribe-email">Email address</label>
+						<input type="text" id="subscribe-email" name="email" placeholder="%CS_EMAILPLACE%" class="subscribe-email form-control" onFocus="clearFormError();">
+					</div>
+					<button type="submit" class="btn send_kd_email">%CS_EMAILBTN%</button>
+				</form>
+				%CS_NOTE%
+				<div class="success-message"></div>
+				<div class="error-message"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 social">
+				%CS_SOCIALMEDIA%
+			</div>
+		</div>
+	</div>
+
+	<script src="%SCRIPT_URL%"></script>
+	<script src="%PLUGIN_URL%/bootstrap/js/bootstrap.min.js"></script>
+	<script src="%PLUGIN_URL%/js/jquery.backstretch.min.js"></script>
+	<script src="%PLUGIN_URL%/js/jquery.plugin.min.js"></script>
+	<script src="%PLUGIN_URL%/js/jquery.countdown.min.js"></script>
+	<script src="%PLUGIN_URL%/js/scripts.js"></script>
+	<!--[if lt IE 10]>
+		<script src="%PLUGIN_URL%/js/placeholder.js"></script>
+	<![endif]-->
+
+<div id="csDefaultCountdown" style="display:none;"></div>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	%CS_BKGRND% ComingSoon.init('%CS_DATE%','%ACTION_URL%','%CS_eERROR%');
+});
+</script>
+</body>
+</html>
